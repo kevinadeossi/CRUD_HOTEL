@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Hotel extends Model
+{
+    use HasFactory;
+
+    protected $primaryKey = 'id_hotel';
+
+    protected $table = 'hotels';
+
+    protected $guarded = ['id_hotel'];
+}
